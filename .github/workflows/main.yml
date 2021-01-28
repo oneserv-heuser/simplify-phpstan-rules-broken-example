@@ -19,4 +19,4 @@ jobs:
       - name: PHPStan
         uses: docker://oskarstark/phpstan-ga
         with:
-          args: analyse Test/
+          args: analyse Test/ --debug -vvv
