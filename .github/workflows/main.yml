@@ -1,20 +1,10 @@
-on: [push, workflow_dispatch]   
-
-name: Test
-
+name: phpstan
+on: [push, workflow_dispatch]
 jobs:
-  phpstan:
-    name: PHPStan
-
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: "Checkout"
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: PHPStan
-        uses: docker://oskarstark/phpstan-ga
-        env:
-          REQUIRE_DEV: true
-        with:
-          args: analyse Test/ --debug -vvv
+        uses: chindit/actions-phpstan@master

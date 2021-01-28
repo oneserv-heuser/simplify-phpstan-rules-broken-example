@@ -3,3 +3,5 @@ includes:
     - vendor/symplify/phpstan-rules/config/services/services.neon
 parameters:
     level: 7
+    paths:
+       - Test
