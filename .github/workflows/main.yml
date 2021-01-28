@@ -14,5 +14,7 @@ jobs:
 
       - name: PHPStan
         uses: docker://oskarstark/phpstan-ga
+        env:
+          REQUIRE_DEV: true
         with:
           args: analyse Test/ --debug -vvv
