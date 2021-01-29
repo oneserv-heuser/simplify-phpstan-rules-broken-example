@@ -1,7 +1,7 @@
 name: phpstan
 on: [ push, workflow_dispatch ]
 jobs:
-  phpstan 7.3:
+  phpstan_7_3:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,8 +15,8 @@ jobs:
           command: debug
           configuration: phpstan.neon
           php_version: 7.3
-          
-  phpstan 7.4:
+
+  phpstan_7_4:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
