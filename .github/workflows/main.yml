@@ -12,8 +12,7 @@ jobs:
       - name: PHPStan Static Analysis 7.3
         uses: php-actions/phpstan@v2
         with:
-          path: Test
-          command: --debug
+          command: analyse --debug
           configuration: phpstan.neon
           php_version: 7.3
 
@@ -28,8 +27,7 @@ jobs:
       - name: PHPStan Static Analysis 7.4
         uses: php-actions/phpstan@v2
         with:
-          path: Test
-          command: --debug
+          command: analyse --debug
           configuration: phpstan.neon
           php_version: 7.4
 
