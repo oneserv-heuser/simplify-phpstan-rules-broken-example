@@ -10,16 +10,16 @@ jobs:
         run: composer install --prefer-dist --no-progress --no-suggest
 
       - name: PHPStan Static Analysis 7.4
-          uses: php-actions/phpstan@v2
-          with:
-            command: debug
-            configuration: phpstan.neon
-            php_version: 7.4
+        uses: php-actions/phpstan@v2
+        with:
+          command: debug
+          configuration: phpstan.neon
+          php_version: 7.4
 
       - name: PHPStan Static Analysis 7.3
-          uses: php-actions/phpstan@v2
-          with:
-            command: debug
-            configuration: phpstan.neon
-            php_version: 7.3
+        uses: php-actions/phpstan@v2
+        with:
+          command: debug
+          configuration: phpstan.neon
+          php_version: 7.3
 
